@@ -1,0 +1,8 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.trae-html-share-packages/
+.vscode/*
+!.vscode/extensions.json
