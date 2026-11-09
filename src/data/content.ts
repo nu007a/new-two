@@ -325,7 +325,7 @@ interface UnitMeta {
   lessons: [string, string][] // [标题, 简介]
 }
 
-const COURSE_STRUCTURE: UnitMeta[][] = [
+export const COURSE_STRUCTURE: UnitMeta[][] = [
   // 入门
   [
     { title: '问候与寒暄', lessons: [['初次见面', '学习最基础的问候与自我介绍'], ['日常问候', '早中晚问候与简单应答']] },

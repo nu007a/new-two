@@ -1,4 +1,4 @@
-import type { ButtonHTMLAttributes, ReactNode } from 'react'
+import type { ButtonHTMLAttributes, CSSProperties, ReactNode } from 'react'
 import { cn } from '@/lib/utils'
 
 // ---------- Button ----------
@@ -39,14 +39,20 @@ export function Card({
   className,
   onClick,
   hover,
+  style,
 }: {
   children: ReactNode
   className?: string
   onClick?: () => void
   hover?: boolean
+  style?: CSSProperties
 }) {
   return (
-    <div className={cn('card', hover && 'card-hover', onClick && 'card-clickable', className)} onClick={onClick}>
+    <div
+      className={cn('card', hover && 'card-hover', onClick && 'card-clickable', className)}
+      onClick={onClick}
+      style={style}
+    >
       {children}
     </div>
   )
